@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# 📱 Ordenador de Números (Bubble Sort)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo móvel desenvolvido em **React Native** criado como entrega para a atividade de implementação de algoritmos estruturados. O objetivo principal do aplicativo é receber uma sequência de números desordenados e organizá-los em ordem crescente utilizando o clássico algoritmo de **Ordenação por Bolha (Bubble Sort)**.
 
-## Get started
+---
 
-1. Install dependencies
+## 🛠️ Funcionalidades
 
+* **Entrada Dinâmica:** O usuário pode digitar uma lista de números separados por vírgula (ex: `5, 2, 9, -1, 6`).
+* **Tratamento de Dados:** O aplicativo automaticamente remove espaços em branco extras e ignora textos ou caracteres inválidos digitados por engano.
+* **Processamento Estruturado:** Implementação real do algoritmo Bubble Sort rodando diretamente no dispositivo.
+* **Interface Limpa:** Design simples e focado na usabilidade, com feedback visual em tempo real aguardando a interação do usuário.
+
+---
+
+## 🧠 Como o Algoritmo (Bubble Sort) Funciona no App?
+
+O *Bubble Sort* é um algoritmo de ordenação simples que percorre a lista de números múltiplas vezes. A cada passagem, ele compara elementos adjacentes (lado a lado):
+1.  Se o número da esquerda for maior que o da direita, eles trocam de lugar.
+2.  Esse processo se repete até que nenhuma troca seja necessária em uma passagem completa, o que significa que a lista está 100% ordenada.
+3.  No código (localizado em `app/(tabs)/index.tsx`), isso foi implementado através de um laço `do...while` combinado com um `for`.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* **React Native** (Framework principal)
+* **Expo** (Ferramenta de construção e execução)
+* **JavaScript / TypeScript** (Lógica de programação)
+
+---
+
+## 💻 Como Rodar o Projeto Localmente
+
+Se desejar testar o projeto no seu próprio computador:
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/J-Pedro2004/app-algoritmo-estruturado.git
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd OrdenadorApp
+
+3. Instale as dependências:
    ```bash
    npm install
-   ```
 
-2. Start the app
-
+4. Inicie o servidor do Expo:
    ```bash
    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+5. Escaneie o QR Code gerado no terminal usando o aplicativo Expo Go no seu celular, ou pressione w para abrir no navegador.
